@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
 	FILE *f;
 	char *location = "/etc/todo/todo.txt";
+	char *config = "~/.todocconfig"
 	char *mode = "r+";
 	char buf[BUFSIZ];
 	char out[BUFSIZ];
@@ -14,6 +15,12 @@ int main(int argc, char *argv[])
 	if((f = fopen(location, mode)) == NULL)
 	{
 		puts("no todo.txt found");
+		return 0;
+	}
+	
+	if((f = fopen(config, "a")) == NULL)
+	{
+		puts("no config found");
 		return 0;
 	}
 	
@@ -54,7 +61,7 @@ int main(int argc, char *argv[])
 			break;
 
 			case 'v':
-			puts("todo.c 1.0 Devan Buggay");
+			puts("todo.c 1.0");
 			break;
 
 			default:
