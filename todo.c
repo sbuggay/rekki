@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
 	FILE *f;
 	char *location = "/etc/todo/todo.txt";
-	char *config = "~/.todocconfig"
+	char *config = "~/.todocconfig";
 	char *mode = "r+";
 	char buf[BUFSIZ];
 	char out[BUFSIZ];
