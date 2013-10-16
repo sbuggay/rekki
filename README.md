@@ -1,7 +1,7 @@
 # rekki 
 ## tell it where you keep your todo list
 ```c
-char *location = "/location/to/your/fucking/todo.txt";
+char *location = "/location/to/your/todo.txt";
 ```
 ## compile it
 ```
@@ -9,7 +9,7 @@ char *location = "/location/to/your/fucking/todo.txt";
 ```
 ## run it
 ```
-./rekki -a holy shit im adding a todo
+./rekki -a make rekki better
 ```
 ## list it
 ```
@@ -19,4 +19,3 @@ char *location = "/location/to/your/fucking/todo.txt";
 ```
 ./rekki 1
 ```
-#wow
